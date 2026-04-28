@@ -3,6 +3,7 @@ package com.blablacar.service;
 import com.blablacar.entity.Ride;
 import com.blablacar.entity.User;
 import com.blablacar.repository.RideRepository;
+import com.blablacar.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
