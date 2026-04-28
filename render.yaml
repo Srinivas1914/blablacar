@@ -7,6 +7,26 @@ services:
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: prod
+      - key: DATABASE_URL
+        fromDatabase:
+          name: blablacar-db
+          property: connectionString
+      - key: DB_USERNAME
+        fromDatabase:
+          name: blablacar-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: blablacar-db
+          property: password
+      - key: DB_DRIVER
+        value: org.postgresql.Driver
+      - key: JPA_DIALECT
+        value: org.hibernate.dialect.PostgreSQLDialect
+      - key: EMAIL_USERNAME
+        sync: false
+      - key: EMAIL_PASSWORD
+        sync: false
 
 databases:
   - name: blablacar-db

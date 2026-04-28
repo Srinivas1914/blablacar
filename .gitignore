@@ -1,0 +1,12 @@
+target/
+*.log
+.DS_Store
+.idea/
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+out/
+node_modules/
+.env
